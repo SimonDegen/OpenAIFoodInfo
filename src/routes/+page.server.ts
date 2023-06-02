@@ -23,6 +23,7 @@ const makeRequest = async (foodInfo: string) => {
     If there are any also include a list over diseases that the food can cause. 
     You shall return the answer as json only with the following keys: foodName, pros, cons, healthRating, diseases. If the given info is not a
     food return a json object with a key: error containing a error message
+    It is very important that you do not include any text other than the json object.
     ---${foodInfo}---`;
 	try {
 		const response = await openAi.createChatCompletion({
