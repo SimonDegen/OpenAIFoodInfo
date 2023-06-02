@@ -1,9 +1,5 @@
 import { openAi } from '../openAi';
 
-export const config = {
-	runtime: 'nodejs18.x'
-};
-
 /** @type {import('./$types').Actions} */
 export const actions = {
 	checkFood: async ({ cookies, request }: any) => {
