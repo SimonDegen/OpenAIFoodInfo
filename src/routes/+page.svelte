@@ -5,7 +5,6 @@
 	import FoodInfoCards from '../components/foodInfoCards.svelte';
 
 	let loading = false;
-	console.log($errorMessage);
 	$: formVisable = $errorMessage === undefined && $foodInfo === undefined && loading === false;
 	const reset = () => {
 		foodInfo.set(undefined);
